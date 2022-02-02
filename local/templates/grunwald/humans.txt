@@ -1,0 +1,16 @@
+/* TEAM */
+Title: ДизайнДепо
+Site: https://designdepot.ru/
+Facebook: https://www.facebook.com/designdepot.ru
+Creative director: Максим Бузин <m.buzin@designdepot.ru>
+Project manager: Анна Савельева <a.savelieva@designdepot.ru>
+Web designer: Максим Бузин <m.buzin@designdepot.ru>
+Front-end developer: Виктор Дмитриевцев <v.dmitrievcev@designdepot.ru>
+
+
+/* SITE */
+Standards: HTML 5.2, CSS Snapshot 2018, ECMA-262 edition 5.1
+Engine:
+Database:
+Components: Normalize.css, Modernizr, jQuery
+Software: WebStorm, Sketch

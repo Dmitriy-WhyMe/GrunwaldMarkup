@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* ====================
+   Стили блоков сайта
+   ==================== */
+/* --------------------
+   Тест сетки
+   -------------------- */
+.grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  min-height: var(--full-height);
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.grid::after {
+  content: "smart";
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 2px 5px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #931680;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.grid__container {
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  height: 100%;
+}
+
+.grid__row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-size: 0;
+  line-height: 1;
+  letter-spacing: 0;
+  word-spacing: 0;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(232, 64, 108, 0.05) 0, rgba(232, 64, 108, 0.05) 10px, transparent 10px, transparent 20px);
+  background-size: 100% 20px;
+  background-repeat: repeat-y;
+}
+
+.grid__column {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-clip: content-box;
+  overflow: hidden;
+}
+
+.grid__column::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(232, 64, 108, 0.01);
+  outline: 1px solid rgba(232, 64, 108, 0.02);
+  outline-offset: -1px;
+  z-index: 1;
+}
+
+.grid__column::after {
+  content: " ";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(147, 22, 128, 0.02);
+  outline: 1px solid rgba(147, 22, 128, 0.05);
+  outline-offset: -1px;
+  z-index: 2;
+}
+
+/* ====================
+   Медиа-запросы
+   ==================== */
+
+@media (min-width: 320px) {
+  .grid__column {
+    width: 25%;
+    min-width: 25%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 460px) {
+  .grid::after {
+    content: "smart-x";
+  }
+  .grid__container {
+    max-width: 768px;
+  }
+  .grid__column {
+    width: 16.66666667%;
+    min-width: 16.66666667%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 740px) {
+  .grid::after {
+    content: "tablet";
+  }
+  .grid__container {
+    max-width: 1024px;
+  }
+  .grid__column {
+    width: 11.11111111%;
+    min-width: 11.11111111%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid::after {
+    content: "laptop";
+  }
+  .grid__container {
+    max-width: 1280px;
+  }
+  .grid__column {
+    width: 8.33333333%;
+    min-width: 8.33333333%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1260px) {
+  .grid::after {
+    content: "desktop";
+  }
+  .grid__container {
+    max-width: 1440px;
+  }
+  .grid__column {
+    width: 8.33333333%;
+    min-width: 8.33333333%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1420px) {
+  .grid::after {
+    content: "wide";
+  }
+  .grid__column {
+    width: 7.14285714%;
+    min-width: 7.14285714%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1660px) {
+  .grid::after {
+    content: "wide-x";
+  }
+  .grid__column {
+    width: 7.14285714%;
+    min-width: 7.14285714%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/*# sourceMappingURL=develop.css.map */

@@ -1,0 +1,43 @@
+{
+  "dir": "ltr",
+  "lang": "ru",
+  "name": "Grunwald",
+  "description": "Производство полуприцепов и надстроек на грузовые шасси",
+  "short_name": "grunwald",
+  "start_url": "/?utm_source=web_app",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "theme_color": "#09783D",
+  "background_color": "#09783D",
+  "serviceworker": {
+    "src": "service-worker.min.js",
+    "scope": "/",
+    "use_cache": false
+  },
+  "icons": [
+    {
+      "src": "local/templates/grunwald/icons/icon-maskable-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "local/templates/grunwald/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "local/templates/grunwald/icons/icon-maskable-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "local/templates/grunwald/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ]
+}
